@@ -4,6 +4,7 @@ public class App {
         // tuleeko tämä läpi /koomates
 
         gnome();
+        hei();
     }
 
     public static void gnome()
@@ -20,5 +21,10 @@ public class App {
         System.out.println("           '.   ____/");
         System.out.println("            | -|-|_");
         System.out.println("            |____)_)");
+    }
+
+    public static void hei()
+    {
+        System.out.println("Hei olen tonttu!");
     }
 }

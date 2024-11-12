@@ -26,5 +26,14 @@ public class App {
     public static void hei()
     {
         System.out.println("Hei olen tonttu!");
+
+        //Tonttu on melko mielenkiintoinen elementti tässä lähdekoodissa. Koska itse pidän erityisesti kenkien designista, printtaan nyt sitten kenkiä. - Daniel
+
+        String kengänvarsi = "| -|-|_ ";
+        String kenkä = "|____)_) ";
+        
+        System.out.println("Ahh kengät ");
+        System.out.println(kengänvarsi);
+        System.out.println(kenkä);
     }
 }

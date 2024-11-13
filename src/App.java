@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Alku testaus että toimiiko.");
-        // tuleeko tämä läpi /koomates
 
         gnome();
         hei();
+        // tulostetaan käyttäjälle joulukuusi
+        joulukuusi();
     }
 
     public static void gnome()
@@ -35,5 +38,24 @@ public class App {
         System.out.println("Ahh kengät ");
         System.out.println(kengänvarsi);
         System.out.println(kenkä);
+    } // kenkien loppu
+
+    public static void joulukuusi(){
+        int joulukuusenKoko = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Kuinka iso kuusi?");
+        joulukuusenKoko=Integer.parseInt(scanner.nextLine());
+
+        for (int i = 1; i <= joulukuusenKoko; i++) {
+            
+            for (int j = joulukuusenKoko - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+
+            for (int k = 0; k < i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
